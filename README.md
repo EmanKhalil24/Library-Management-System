@@ -1,17 +1,20 @@
-Library Management System using Laravel Framework.
+# __Library Management System using Laravel Framework.__
 
-Project Description:
+## Project Description:
 Library Management System API using Laravel PHP. The system allow librarians
 to manage books, patrons, and borrowing records.
 
-Entities:
+## Entities:
+```
 ● Create entities for:
 ● Book: Includes attributes like ID, title, author, publication year, ISBN, etc.
 ● Patron: Contains details like ID, name, contact information, etc.
 ● Borrowing Record: Tracks the association between books and patrons,
 including borrowing and return dates.
+```
 
-API Endpoints:
+## API Endpoints:
+```
 ● Implement RESTful endpoints to handle the following operations:
 ● Book management endpoints:
 ● GET /api/books: Retrieve a list of all books.
@@ -30,11 +33,14 @@ API Endpoints:
 borrow a book.
 
 ● PUT /api/return/{bookId}/patron/{patronId}: Record the return of a borrowed book by a patron.
-
-Data Storage:
+```
+## Data Storage:
+```
 ● Use an appropriate database (e.g., H2, MySQL, PostgreSQL) to persist book, patron, and borrowing record details.
 ● Set up proper relationships between entities (e.g., one-to-many between books and borrowing records).
-
-Validation and Error Handling:
+```
+## Validation and Error Handling:
+```
 ● Implement input validation for API requests (e.g., validating required fields, data formats, etc.).
 ● Handle exceptions gracefully and return appropriate HTTP status codes and error messages.
+```
